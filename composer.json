@@ -11,7 +11,7 @@
 	}],
 	"require": {
 		"php": "^7.4|^8.0",
-		"laminas/laminas-diactoros": "^2.17",
+		"laminas/laminas-diactoros": "^3.3.1",
 		"league/event": "^2.2",
 		"php-http/curl-client": "^2.2",
 		"php-http/message": "^1.10",
@@ -39,6 +39,9 @@
 		}
 	},
 	"config": {
-		"platform-check": false
+		"platform-check": false,
+		"allow-plugins": {
+			"php-http/discovery": true
+		}
 	}
 }
